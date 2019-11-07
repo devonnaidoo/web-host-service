@@ -5,7 +5,7 @@ body {
 }
 .hero.is-info {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://unsplash.it/1200/900?random") no-repeat center center fixed;
+    url("https://i.imgur.com/ZlGR0hB.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,14 +21,17 @@ body {
   line-height: 1.5;
 }
 .navbar {
-  background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(122, 98, 96, 0) !important;
 }
 .hero.is-info .navbar-menu a {
   border: none;
 }
+h1.title {
+  color: rgb(255, 255, 255) !important;
+}
 @media screen and (max-width: 1023px) {
   .hero.is-info .navbar-menu {
-    background-color: #2d2e2e;
+    background-color: rgba(45, 46, 46, 0.5);
   }
   .hero.is-info .navbar-menu a {
     border: none;
