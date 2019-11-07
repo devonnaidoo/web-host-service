@@ -3,6 +3,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
+
+/* Hero and nav */
 .hero.is-info {
   background: rgb(195, 181, 173);
   background: linear-gradient(
@@ -25,7 +27,12 @@ body {
   line-height: 1.5;
 }
 .navbar {
-  background-color: rgba(122, 98, 96, 0) !important;
+  background: rgb(0, 0, 0) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  ) !important;
 }
 .hero.is-info .navbar-menu a {
   border: none;
@@ -48,6 +55,7 @@ h2.subtitle {
 
 /* Desktop */
 @media screen and (max-width: 1023px) {
+  /* Hero and nav */
   .hero.is-info .navbar-menu {
     background-color: rgba(45, 46, 46, 0.5);
   }
