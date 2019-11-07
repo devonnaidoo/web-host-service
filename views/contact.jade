@@ -2,7 +2,7 @@ extends layouts
 
 block content
     .container.contact-us
-        .form(method='post', action='contact/send')
+        form(method='post', action='contact/send')
             .field
                 label.label Name
                 .control
@@ -17,4 +17,4 @@ block content
                     textarea.textarea(placeholder='Textarea')
             .field.is-grouped
                 .control
-                    button.button.is-link Submit
+                    button.button.is-link(type='submit') Submit

@@ -35,6 +35,9 @@ app.get("/about", (req, res) => {
 app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us" });
 });
+app.post("/contact/send", (req, res) => {
+  console.log("test");
+});
 
 // 3. Add port
 app.listen(3000);
