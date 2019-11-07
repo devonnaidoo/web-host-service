@@ -36,7 +36,13 @@ app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us" });
 });
 app.post("/contact/send", (req, res) => {
-  console.log("test");
+  var transporter = nodemailer.createTransport({
+    service: "Gmail",
+    auth: {
+      user: "devonnaidoomultimedia@gmail.com",
+      pass: ""
+    }
+  });
 });
 
 // 3. Add port
