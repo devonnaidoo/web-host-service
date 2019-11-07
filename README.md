@@ -30,3 +30,19 @@ Run:
 To start the applicationun the following command in the root directory:
 
 `node app`
+
+To get the contact form edit the following code in `app.js`
+
+```
+auth: {
+    user: "", // Enter your email address here
+    pass: "" // Enter your email password here
+}
+```
+
+and
+
+```
+from: "Name Surname < >",
+to: " ", // Enter the email address you want to send to here
+```
