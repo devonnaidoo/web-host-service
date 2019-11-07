@@ -27,7 +27,7 @@ Run:
 
 ### Usage
 
-To start the application the following command in the root directory:
+To start the application run the following command in the root directory:
 
 `node app`
 
