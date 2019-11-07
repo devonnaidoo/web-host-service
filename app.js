@@ -15,5 +15,10 @@ app.use(
   })
 );
 
+// Creating a route
+app.get("/", (req, res) => {
+  res.send("Working");
+});
+
 app.listen(3000);
 console.log("Server running on port 3000");
