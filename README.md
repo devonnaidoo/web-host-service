@@ -35,16 +35,16 @@ To get the contact form to work edit the following code in `app.js`
 
 ```
 auth: {
-    user: "", // Enter your email address here
-    pass: "" // Enter your email password here
+    user: "Enter your email address here",
+    pass: "Enter your email password here"
 }
 ```
 
 and
 
 ```
-from: "Name Surname < >",
-to: " ", // Enter the email address you want to send to here
+from: "Name Surname <add email from auth here>",
+to: "Enter the email address you want to send to here"
 ```
 
 ### Prerequisites
