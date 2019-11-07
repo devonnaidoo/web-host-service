@@ -50,3 +50,7 @@ to: " ", // Enter the email address you want to send to here
 ### Prerequisites
 
 - Node.js installed on your system
+
+## License
+
+This project is licensed under the MIT License
