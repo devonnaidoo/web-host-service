@@ -36,17 +36,17 @@ app.get("/contact", (req, res) => {
   res.render("contact", { title: "Contact Us" });
 });
 app.post("/contact/send", (req, res) => {
-  var transporter = nodemailer.createTransport({
+  var transporter = node_mailer.createTransport({
     service: "Gmail",
     auth: {
-      user: "devonnaidoomultimedia@gmail.com",
-      pass: ""
+      user: "", // Enter your email address here
+      pass: "" // Enter your email password here
     }
   });
 
   var mailOptions = {
-    from: "Devon Naidoo <devonnaidoomultimedia@gmail.com>",
-    to: "devonnaidoomufc@gmail.com",
+    from: "Name Surname < >",
+    to: "", // Enter the email address you want to send to here
     subject: "Website Submission",
     text:
       "Your submission contains the following details: Name - " +
