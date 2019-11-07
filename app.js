@@ -27,10 +27,13 @@ app.use(express.static(path.join(__dirname, "public")));
 
 //4. Creating a route
 app.get("/", (req, res) => {
-  res.render("index");
+  res.render("index", { title: "Home" });
 });
 app.get("/about", (req, res) => {
-  res.render("about");
+  res.render("about", { title: "About Us" });
+});
+app.get("/contact", (req, res) => {
+  res.render("contact", { title: "Contact Us" });
 });
 
 // 3. Add port
