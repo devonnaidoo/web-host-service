@@ -2,9 +2,17 @@
 
 ## Description
 
-A simple web server built using Node.js
-A basic web server created using Node.js with no frameworks. It aims to give a rough example of how servers on a framework could be created and managed.
+A simple user interface for a website hosting company
+A basic web server created using Express JS. It aims to give an example of routing and using node mailer as well as other modules.
 
 ### Screenshot
 
 ![](public/img/web-host-screenshot.jpg)
+
+### Technologies
+
+- Node.js
+- Express JS
+- JavaScript
+- HTML
+- CSS
