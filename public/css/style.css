@@ -20,3 +20,18 @@ body {
   padding: 3rem 0;
   line-height: 1.5;
 }
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+}
+.hero.is-info .navbar-menu a {
+  border: none;
+}
+@media screen and (max-width: 1023px) {
+  .hero.is-info .navbar-menu {
+    background-color: #2d2e2e;
+  }
+  .hero.is-info .navbar-menu a {
+    border: none;
+    width: 100%;
+  }
+}
