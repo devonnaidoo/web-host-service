@@ -37,6 +37,12 @@ h2.subtitle {
   padding: 10px 0px !important;
   margin-right: 20px;
 }
+/* About Us */
+.about-us {
+  margin: 100px 50px;
+}
+
+/* Desktop */
 @media screen and (max-width: 1023px) {
   .hero.is-info .navbar-menu {
     background-color: rgba(45, 46, 46, 0.5);
