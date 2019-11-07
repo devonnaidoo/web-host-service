@@ -6,4 +6,32 @@ html(lang="en")
         title Document
         link(href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css", rel="stylesheet")
     body
-        h1 Hello World
+        section.hero.is-info.is-fullheight
+            .hero-head
+                nav.navbar
+                    .container
+                        .navbar-brand
+                            a.navbar-item(href='/')
+                                h1 WebHost
+                            span.navbar-burger.burger(data-target='navbarMenu')
+                                span
+                                span
+                                span
+                        #navbarMenu.navbar-menu
+                            .navbar-end
+                                span.navbar-item
+                                    a.button.is-white.is-outlined(href='/')
+                                        span.icon
+                                            i.fa.fa-home
+                                        span Home
+                                span.navbar-item
+                                    a.button.is-white.is-outlined(href='/about')
+                                        span.icon
+                                            i.fa.fa-superpowers
+                                        span About
+                                span.navbar-item
+                                    a.button.is-white.is-outlined(href='/contact')
+                                        span.icon
+                                            i.fa.fa-book
+                                        span Contact
+         
