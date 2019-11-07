@@ -6,6 +6,7 @@ var node_mailer = require("nodemailer");
 // 1. Initialising app
 var app = express();
 
+//Setting up jade
 // 5. Specify which folder the template files are in
 app.set("views", path.join(__dirname, "views"));
 // 6. Set view engine - the view engine that will be used in jade
@@ -21,6 +22,8 @@ app.use(
     extended: false
   })
 );
+// Including the public folder
+app.use(express.static(path.join(__dirname, "public")));
 
 //4. Creating a route
 app.get("/", (req, res) => {
