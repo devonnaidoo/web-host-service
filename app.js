@@ -43,6 +43,27 @@ app.post("/contact/send", (req, res) => {
       pass: ""
     }
   });
+
+  var mailOptions = {
+    from: "Devon Naidoo <devonnaidoomultimedia@gmail.com>",
+    to: "devonnaidoomufc@gmail.com",
+    subject: "Website Submission",
+    text:
+      "Your submission contains the following details: Name - " +
+      req.body.name +
+      " Email - " +
+      req.body.email +
+      "Message: " +
+      req.body.message,
+    html:
+      "<h3>Your submission contains the following details: </h3><ul> <li>Name -" +
+      req.body.name +
+      "</li> <li> Email" +
+      req.body.email +
+      "</li> <li> Message" +
+      req.body.message +
+      "</li></ul>"
+  };
 });
 
 // 3. Add port
