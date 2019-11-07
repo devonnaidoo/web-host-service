@@ -48,9 +48,23 @@ h2.subtitle {
   padding: 10px 0px !important;
   margin-right: 20px;
 }
+
 /* About Us */
 .about-us {
   margin: 100px 50px;
+}
+
+/* Contact Us */
+.contact-us {
+  padding: 100px 50px;
+}
+.contact-us label {
+  color: #eeeeee !important;
+}
+.contact-us button {
+  background-color: #ffffff !important;
+  color: rgba(19, 156, 149, 1) !important;
+  font-weight: bold;
 }
 
 /* Desktop */

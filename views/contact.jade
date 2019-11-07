@@ -1,4 +1,20 @@
 extends layouts
 
 block content
-    .container
+    .container.contact-us
+        .form(method='post', action='contact/send')
+            .field
+                label.label Name
+                .control
+                    input.input(type='text', placeholder='Add name here')
+            .field
+                label.label Email
+                .control
+                    input.input(type='email', placeholder='Add input here')
+            .field
+                label.label Message
+                .control
+                    textarea.textarea(placeholder='Textarea')
+            .field.is-grouped
+                .control
+                    button.button.is-link Submit
