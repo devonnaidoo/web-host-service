@@ -56,14 +56,23 @@ app.post("/contact/send", (req, res) => {
       "Message: " +
       req.body.message,
     html:
-      "<h3>Your submission contains the following details: </h3><ul> <li>Name -" +
+      "<h3>Your submission contains the following details: </h3> <ul> <li> Name -" +
       req.body.name +
       "</li> <li> Email" +
       req.body.email +
       "</li> <li> Message" +
       req.body.message +
-      "</li></ul>"
+      "</li> </ul>"
   };
+  transporter.sendMail(mailOptions, (err, info) => {
+    if (err) {
+      console.log(err);
+      res.redirect("/contact");
+    } else {
+      console.log("Message sent successfully: " + info.response);
+      res.redirect("/");
+    }
+  });
 });
 
 // 3. Add port
