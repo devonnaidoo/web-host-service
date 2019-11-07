@@ -3,22 +3,30 @@ var path = require("path");
 var body_parser = require("body-parser");
 var node_mailer = require("nodemailer");
 
-// Initialising app
+// 1. Initialising app
 var app = express();
 
-// Set body parser middleware
-// Middleware - Plugins that change the req or res object before it get handled by the application
+// 5. Specify which folder the template files are in
+app.set("views", path.join(__dirname, "views"));
+// 6. Set view engine - the view engine that will be used in jade
+app.set("view engine", "jade");
+
+// 2. Set body parser middleware
+// 2. Middleware - Plugins that change the req or res object before it get handled by the application
 app.use(body_parser.json());
 app.use(
+  // Returns middleware that only parses urlencoded bodies and only looks at requests where the Content-Type header matches the type option
   body_parser.urlencoded({
+    // The extended option allows to choose between parsing the URL-encoded data with the querystring library (when false) or the qs library (when true)
     extended: false
   })
 );
 
-// Creating a route
+//4. Creating a route
 app.get("/", (req, res) => {
-  res.send("Working");
+  res.render("index");
 });
 
+// 3. Add port
 app.listen(3000);
 console.log("Server running on port 3000");
