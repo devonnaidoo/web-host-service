@@ -1,1 +1,13 @@
 extends layouts
+
+block content
+    .container
+        .columns
+            .column.is-5
+                figure.image.is-4by3
+                    img(src='https://picsum.photos/800/600/?random', alt='Description')
+            .column.is-6.is-offset-1
+                h1.title 
+                    | #{title}
+                p
+                    | Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, id vitae. Itaque assumenda asperiores sunt rem officiis porro, ex quia omnis quis mollitia ratione tenetur non, sequi sed harum amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga labore, vel, qui et aspernatur aliquid dignissimos voluptatum illo harum perferendis adipisci quisquam iusto veniam hic aliquam soluta voluptates est libero!
