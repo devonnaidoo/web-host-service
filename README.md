@@ -46,3 +46,7 @@ and
 from: "Name Surname < >",
 to: " ", // Enter the email address you want to send to here
 ```
+
+### Prerequisites
+
+- Node.js installed on your system
