@@ -26,6 +26,9 @@ body {
 .hero.is-info .navbar-menu a {
   border: none;
 }
+h1 {
+  font-weight: bold;
+}
 h1.title {
   color: rgb(255, 255, 255) !important;
 }
