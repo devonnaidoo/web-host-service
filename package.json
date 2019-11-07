@@ -1,0 +1,25 @@
+{
+  "name": "web-hosting-service",
+  "version": "1.0.0",
+  "description": "web hosting service ui",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devonnaidoo/web-host-service.git"
+  },
+  "author": "Devon Naidoo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "*",
+    "express": "*",
+    "jade": "*",
+    "nodemailer": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/devonnaidoo/web-host-service/issues"
+  },
+  "homepage": "https://github.com/devonnaidoo/web-host-service#readme"
+}
