@@ -4,12 +4,16 @@ body {
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 .hero.is-info {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("https://i.imgur.com/ZlGR0hB.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: rgb(195, 181, 173);
+  background: linear-gradient(
+    90deg,
+    rgba(195, 181, 173, 1) 0%,
+    rgba(19, 156, 149, 1) 65%
+  );
+}
+.navbar-brand a {
+  color: rgb(2, 80, 76) !important;
+  font-size: 24px;
 }
 .hero .nav,
 .hero.is-success .nav {
@@ -33,7 +37,7 @@ h1.title {
   color: rgb(255, 255, 255) !important;
 }
 h2.subtitle {
-  color: rgb(201, 201, 201) !important;
+  color: rgb(238, 238, 238) !important;
   padding: 10px 0px !important;
   margin-right: 20px;
 }
