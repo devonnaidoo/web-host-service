@@ -27,11 +27,11 @@ Run:
 
 ### Usage
 
-To start the applicationun the following command in the root directory:
+To start the application the following command in the root directory:
 
 `node app`
 
-To get the contact form edit the following code in `app.js`
+To get the contact form to work edit the following code in `app.js`
 
 ```
 auth: {
